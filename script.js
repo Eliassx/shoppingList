@@ -53,10 +53,8 @@ form.addEventListener('submit', (e) => {
             const item = e.currentTarget.parentElement.parentElement;
             const id = item.dataset.id
 
-            console.log(id);
-
             listItem.removeChild(item);
-            console.log(deleteLocalStorage(id))
+            deleteLocalStorage(id)
             defaultForm();
 
         });
@@ -116,7 +114,6 @@ function deleteLocalStorage(id) {
             return item
         }
     });
-
-    console.log(items)
+    
     localStorage.setItem('list', JSON.stringify(items   ))
 };
