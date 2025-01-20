@@ -115,5 +115,5 @@ function deleteLocalStorage(id) {
         }
     });
     
-    localStorage.setItem('list', JSON.stringify(items   ))
+    localStorage.setItem('list', JSON.stringify(items))
 };
